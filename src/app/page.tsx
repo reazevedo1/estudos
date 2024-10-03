@@ -1,11 +1,10 @@
-import Botao from "./components/botao"
+import Link from "next/link"
 
 export default function Home() {
   return (
     <div className="flex gap-2">
-      <Botao label="salvar"/>
-      <Botao label="cancelar"/>
-      <Botao />
+      <Link href="/primeiro">Primeiro componente</Link>
+      <Link href="/contador">Contador</Link>
     </div>
   )
 }
